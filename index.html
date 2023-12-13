@@ -1,125 +1,140 @@
 <!DOCTYPE html>
-<html lang="en-ca">
-
+<html lang="en">
 <head>
-  <!-- Set the page title -->
-  <title>Final Exam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam</title>
+    <style>
+        body {
+            background-color: #peachpuff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  <!-- Set the charset we're using to UTF-8 -->
-  <meta charset="utf-8" />
+        header {
+            background-color: #peachpuff;
+            color: #black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-  <!-- Set the screens default zoom / scale to 1 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+        header img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
 
-  <!-- Specifies the document mode for Internet Explorer -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        section {
+            padding: 20px;
+            h2 {text-align: center;}
+            p {text-align: center;}
+        }
 
-  <!-- Set the CSS Reset File -->
-  <link rel="stylesheet" href="./reset.css" />
+        .colored-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            color: #lightblue; 
+        }
 
-  <!-- Set some basic CSS for the header and body -->
-  <link rel="stylesheet" href="./style.css" />
+        #image-section {
+            display: flex;
+            align-items: center;
+        }
 
-  <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/window.svg" type="image/svg+xml" />
+        #image-section img {
+            max-width: 200px;
+            margin-right: 20px;
+            align-items: center;
+        }
 
+        .work-item {
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        footer {
+            background-color: #peachpuff;
+            color: #black; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer img {
+            max-width: 30px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
-
 <body>
 
-  <!--
+    <header>
+        <div>
+            <img src="logo-dark.svg" alt="logo-dark">
+        </div>
+        <div>
+            <button>Contact Us</button>
+        </div>
+    </header>
 
-    FINAL EXAM CONTENT
+    <section>
+        <h2>Web Development Solutions Made Easy</h2>
+        <p>Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.</p>
+    </section>
 
-    ALL OF THE CONTENT BELOW HAS BEEN PROVIDED FOR YOU SO
-    THAT YOU CAN FOCUS ON THE HTML STRUCTURE AND SEMANTICS.
+    <section>
+        <div class="colored-box" style="background-color: #ff5733;">WebDevelopment</div>
+        <div class="colored-box" style="background-color: #33ff57;">UI/UX</div>
+        <div class="colored-box" style="background-color: #5733ff;">CSS</div>
+        <div class="colored-box" style="background-color: #ff3366;">HTML</div>
+        <div class="colored-box" style="background-color: #66ff33;">JavaScript</div>
+        <div class="colored-box" style="background-color: #3366ff;">GitHub</div>
+    </section>
 
-    ---------------------------------------------
+    <section id="image-section">
+        <img src="about.jpg" alt="about">
+        <div>
+            <h2>Hey, I'm Amy. Are you ready to level up your web project?</h2>
+            <p> I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+            <button>Contact Me</button>
+        </div>
+    </section>
 
-    # HEADER SECTION
+    <section>
+        <h2>My Work</h2>
+        <div class="row">
+            <img src="work-1.png" alt="work-1" width="400" height="400" align-items: center;> <img src="work-2.png" alt="work-2" width="400" height="400" align-items: center;>
+            <p>Tutorial Excercise 03 HTML CSS   Tutorial Excercise 05 HTML CSS</p>
+        <div class="row">
+            <img src="work-3.png" alt="work-3" width="400" height="400" align-items: center;> <img src="work-4.png" alt="work-4" width="400" height="400" align-items: center;>
+            <p>Tutorial Excercise 07 HTML CSS   Tutorial Excercise 09 HTML CSS JavaScript</p>
+    </section>
 
-    Site Header (hidden text - not visible on screen)
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-light.svg)
-    Contact Us
-
-    # MAIN SECTION
-
-    ## HERO SECTION
-
-    Amy's Web Development Agency (hidden text - not visible on screen)
-    Web Development Solutions Made Easy
-    Crafting Digital Dreams: Transforming Code into Captivating Experiences - Your Vision, My Expertise.
-
-
-    ## SKILLS SECTION
-
-    My Skills (hidden text - not visible on screen)
-    Web Development
-    UI/UX
-    CSS
-    JavaScript
-    HTML
-    GitHub
-
-    ## ABOUT ME SECTION
-
-    About me (hidden text - not visible on screen)
-    Picture of Amy's in business atire with a pink background (<- image alt text <- ./images/about/about.jpg)
-
-    Hey, I'm Amy. Are you ready to level up your web project?
-
-    I'm a web developer based in Ottawa, Canada. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-    Contact me
-
-    ## MY WORK SECTION
-
-    My Work
-
-    Screenshot of Tutorial Exercise 03 (<- image alt text <- ./images/work/work-1.png)
-    Tutorial Exercise 03
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 05 (<- image alt text <- ./images/work/work-2.png)
-    Tutorial Exercise 05
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 07 (<- image alt text <- ./images/work/work-3.png)
-    Tutorial Exercise 07
-    HTML
-    CSS
-
-    Screenshot of Tutorial Exercise 09 (<- image alt text <- ./images/work/work-4.png)
-    Tutorial Exercise 09
-    HTML
-    CSS
-    JavaScript
-
-    Book a call with me
-
-    ## CONTACT ME SECTION
-
-    Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"
-
-    Contact Me
-
-    ## FOOTER SECTION
-
-    Site Footer (hidden text - not visible on screen)
-
-    Amy's Web Development Agency Logo (<- image alt text <- ./images/logo/logo-dark.svg)
-    © 2023 Amy's Web Development Agency
-
-  -->
-
-  <main>
-    <div class="page-container">
-      <h1>Complete Your Final Exam Here</h1>
+    <section>
+        <div class="textbox-container">
+    <div class="textbox-title">Book a call with me</div>
+    <div class="textbox-body">
+      <p>Excited to chat! Whether you have a project in mind or just want to explore possibilities, let's connect. Use the form below to suggest a time, and I'll reach out to confirm. Can't wait to discuss your ideas!"</p>
     </div>
-  </main>
+    <button class="textbox-button" onclick="alert('Button Clicked!')">Contact Me</button>
+  </div>
+    </section>
 
+    <footer>
+        <div>
+            <img src="logo-light.svg" alt="logo-light">
+        </div>
+        <div>
+            <p>&copy; 2023 Amy's Web Development Agency</p>
+        </div>
+    </footer>
 
 </body>
 </html>
